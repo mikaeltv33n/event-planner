@@ -1,0 +1,215 @@
+/**
+ * Theme Name:        Event planner
+ * Theme URI:         https://#
+ * Description:       Custom theme description...
+ * Version:           1.0.0
+ * Author:            Mikael
+ * Author URI:        https://example.com
+ * Tags:              most epic theme, event planner  
+ * Text Domain:       event-planner
+ * Tested up to:      6.6.1
+ * Requires at least: 6.6.1
+ * Requires PHP:      7.4
+ * License:           GNU General Public License v2.0 or later
+ * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
+ */
+
+ *{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+ }
+
+ body{
+    background: #f0ecec;
+ }
+
+ 
+.theme-header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 8px 8px;
+   background-color: #333;
+   color: white; 
+}
+
+.theme-main-menu {
+   margin: 0;
+   padding: 0;
+}
+
+.theme-main-menu .menu {
+   display: flex;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+.theme-main-menu .menu-item {
+   margin: 0 15px; 
+}
+
+.theme-main-menu .menu-item a {
+   text-decoration: none; 
+   color: white; 
+   font-size: 16px; 
+   padding: 5px 10px; 
+   transition: background-color 0.3s; 
+}
+
+.theme-main-menu .menu-item a:hover {
+background-color: rgb(255, 106, 0); 
+color: white; 
+border-radius: 3px;
+}
+
+
+html :where(.wp-block) {
+ max-width: 100%;
+
+}
+
+.event-heading{
+   display: flex;
+   justify-content: center;
+   margin: 50px 0px;
+}
+
+
+
+
+.custom-icons {
+   margin: 50px;
+   display: flex;
+   flex-wrap: nowrap;
+   justify-content: center;
+}
+
+.custom-icon-item {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 0 20px;
+   text-align: center;
+}
+
+.custom-icon1::before,
+.custom-icon2::before,
+.custom-icon3::before,
+.custom-icon4::before {
+   font-family: 'Material Symbols Outlined';
+   color: orange;
+   font-size: 64px;
+}
+
+.custom-icon1::before {
+   content: "\ea65";
+}
+
+.custom-icon2::before {
+   content: "\e407";
+}
+
+.custom-icon3::before {
+   content: "\ea73";
+}
+
+.custom-icon4::before {
+   content: "\e7fa";
+}
+
+.icon-text {
+   font-size: 18px;
+   color: #333;
+   margin: 10px 0;
+}
+
+.additional-text {
+   font-size: 14px;
+   color: #666;
+}
+
+.custom-icon-button {
+   font-size: 10px;
+   color: white;
+   background-color: orange;
+   padding: 6px 10px;
+   text-decoration: none;
+   border-radius: 5px;
+   margin-top: 20px;
+}
+
+.custom-button:hover {
+   background-color: darkorange;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.wpcf7-form {
+   max-width: 600px; 
+   margin: 0 auto; 
+   padding: 20px;
+   border: 1px solid #ccc; 
+   border-radius: 5px; 
+   background-color: #f9f9f9; 
+}
+
+.wpcf7-form input[type="text"],
+.wpcf7-form input[type="email"],
+.wpcf7-form textarea {
+   width: 100%; 
+   padding: 10px;
+   margin-bottom: 10px;
+   border: 1px solid #ccc;
+   border-radius: 3px;
+   box-sizing: border-box; 
+}
+
+.wpcf7-form input[type="submit"] {
+   display: inline-block;
+   padding: 10px 20px;
+   background-color: #333; 
+   color: #fff; 
+   border: none;
+   border-radius: 3px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
+.wpcf7-form input[type="submit"]:hover {
+   background-color: #555; 
+}
+
+.wpcf7-form label {
+   display: block;
+   margin-bottom: 5px;
+   font-weight: bold;
+   color: #333;
+}
+
+.wpcf7-form .wpcf7-not-valid-tip {
+   color: red;
+   font-size: 12px;
+   margin-top: -10px;
+   margin-bottom: 10px;
+}
+
+.wpcf7 .wpcf7-mail-sent-ok {
+   color: green;
+   font-size: 14px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
